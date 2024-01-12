@@ -1,0 +1,1072 @@
+/usr/local/kSNP4.1pkg/statusupdate 0 10 1 Preprocessing
+Finished genomes for finding SNP positions:
+
+/usr/local/kSNP4.1pkg/statusupdate 0 10 2 Running jellyfish to get kmer counts
+DEBUG:Commandline options, as parsed: Namespace(cachedir='/root/kSNP', debug=True, fastalist='fasta_list', fileToGenome='fileName2genomeName', filterSuffix='filtered', freqCheck='/usr/local/kSNP4.1pkg/inline_frequency_check', hashSize='1000000000', info=False, jellyfish='/usr/local/kSNP4.1pkg/jellyfish', jellyfishSuffix='Jelly', k='21', kmerSuffix='kmers', maxcachebytes=10000000000, maxcachedays=90, mergeFastaReads='/usr/local/kSNP4.1pkg/merge_fasta_reads3', numCpus='16', outputPrefix='fsplit')
+INFO:Parsing input fasta file
+DEBUG:Parsing input file fasta_list to generate fileName2genomeName and calculate filenames
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM095.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM095.fa: e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM040.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM040.fa: 9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM031.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM031.fa: 2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/NIH05001.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/NIH05001.fa: 11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM088.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM088.fa: eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM061.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM061.fa: e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM087.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM087.fa: 166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/C_acc_ATCC49725.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/C_acc_ATCC49725.fa: 67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46
+DEBUG:Calculating checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM018.fa
+DEBUG:Determined checksum for /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM018.fa: bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e
+INFO:Number of input sequences: 9
+INFO:Checking cache for 9 input files
+INFO:Converting 9 input files without cached data into canonical kSNP input
+INFO:Running jellyfish to find kmers for 9 input files
+DEBUG:Processing (jellyfish) fsplit0.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit0.Jelly -m 21 -s 1000000000 -t 16 fsplit0
+DEBUG:Processing (jellyfish) fsplit1.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit1.Jelly -m 21 -s 1000000000 -t 16 fsplit1
+DEBUG:Processing (jellyfish) fsplit2.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit2.Jelly -m 21 -s 1000000000 -t 16 fsplit2
+DEBUG:Processing (jellyfish) fsplit3.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit3.Jelly -m 21 -s 1000000000 -t 16 fsplit3
+DEBUG:Processing (jellyfish) fsplit4.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit4.Jelly -m 21 -s 1000000000 -t 16 fsplit4
+DEBUG:Processing (jellyfish) fsplit5.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit5.Jelly -m 21 -s 1000000000 -t 16 fsplit5
+DEBUG:Processing (jellyfish) fsplit6.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit6.Jelly -m 21 -s 1000000000 -t 16 fsplit6
+DEBUG:Processing (jellyfish) fsplit7.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit7.Jelly -m 21 -s 1000000000 -t 16 fsplit7
+DEBUG:Processing (jellyfish) fsplit8.Jelly
+DEBUG:Running jellyfish: /usr/local/kSNP4.1pkg/jellyfish count -C -o fsplit8.Jelly -m 21 -s 1000000000 -t 16 fsplit8
+DEBUG:Looking for dump files for LM095
+DEBUG:Processing (dump) fsplit0.Jelly
+DEBUG:Running jellyfish dump on fsplit0.Jelly (1/1 jellyfish dump for genome LM095)
+DEBUG:Looking for dump files for LM040
+DEBUG:Processing (dump) fsplit1.Jelly
+DEBUG:Running jellyfish dump on fsplit1.Jelly (1/1 jellyfish dump for genome LM040)
+DEBUG:Looking for dump files for LM031
+DEBUG:Processing (dump) fsplit2.Jelly
+DEBUG:Running jellyfish dump on fsplit2.Jelly (1/1 jellyfish dump for genome LM031)
+DEBUG:Looking for dump files for NIH05001
+DEBUG:Processing (dump) fsplit3.Jelly
+DEBUG:Running jellyfish dump on fsplit3.Jelly (1/1 jellyfish dump for genome NIH05001)
+DEBUG:Looking for dump files for LM088
+DEBUG:Processing (dump) fsplit4.Jelly
+DEBUG:Running jellyfish dump on fsplit4.Jelly (1/1 jellyfish dump for genome LM088)
+DEBUG:Looking for dump files for LM061
+DEBUG:Processing (dump) fsplit5.Jelly
+DEBUG:Running jellyfish dump on fsplit5.Jelly (1/1 jellyfish dump for genome LM061)
+DEBUG:Looking for dump files for LM087
+DEBUG:Processing (dump) fsplit6.Jelly
+DEBUG:Running jellyfish dump on fsplit6.Jelly (1/1 jellyfish dump for genome LM087)
+DEBUG:Looking for dump files for C_acc_ATCC49725
+DEBUG:Processing (dump) fsplit7.Jelly
+DEBUG:Running jellyfish dump on fsplit7.Jelly (1/1 jellyfish dump for genome C_acc_ATCC49725)
+DEBUG:Looking for dump files for LM018
+DEBUG:Processing (dump) fsplit8.Jelly
+DEBUG:Running jellyfish dump on fsplit8.Jelly (1/1 jellyfish dump for genome LM018)
+DEBUG:Waiting for dumpers and frequency checkers to finish
+DEBUG:a process exited with exit code 0, 17 processes remaining to check
+DEBUG:a process exited with exit code 0, 16 processes remaining to check
+DEBUG:a process exited with exit code 0, 15 processes remaining to check
+DEBUG:a process exited with exit code 0, 14 processes remaining to check
+DEBUG:a process exited with exit code 0, 13 processes remaining to check
+DEBUG:a process exited with exit code 0, 12 processes remaining to check
+DEBUG:a process exited with exit code 0, 11 processes remaining to check
+DEBUG:a process exited with exit code 0, 10 processes remaining to check
+DEBUG:a process exited with exit code 0, 9 processes remaining to check
+DEBUG:a process exited with exit code 0, 8 processes remaining to check
+DEBUG:a process exited with exit code 0, 7 processes remaining to check
+DEBUG:a process exited with exit code 0, 6 processes remaining to check
+DEBUG:a process exited with exit code 0, 5 processes remaining to check
+DEBUG:a process exited with exit code 0, 4 processes remaining to check
+DEBUG:a process exited with exit code 0, 3 processes remaining to check
+DEBUG:a process exited with exit code 0, 2 processes remaining to check
+DEBUG:a process exited with exit code 0, 1 processes remaining to check
+DEBUG:a process exited with exit code 0, 0 processes remaining to check
+DEBUG:Dumpers and statistics done
+DEBUG:Processing frequency data for fsplit0
+DEBUG:processes: [<__main__.Popen object at 0x7f64d313ab50>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit1
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156cd0>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit2
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156d00>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit3
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156ee0>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit4
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156c40>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit5
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156be0>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit6
+DEBUG:processes: [<__main__.Popen object at 0x7f64d31568b0>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit7
+DEBUG:processes: [<__main__.Popen object at 0x7f64d3156a30>]
+allPendingProcesses: []
+DEBUG:Processing frequency data for fsplit8
+DEBUG:processes: [<__main__.Popen object at 0x7f64d31565b0>]
+allPendingProcesses: []
+DEBUG:Filtering out minimum frequency kmers from 9 files
+DEBUG:File: {'count': '0', 'genome': 'LM095', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM095.fa', 'tempFile': 'fsplit0', 'jellyfishDB': 'fsplit0.Jelly', 'kmers': 'fsplit0.kmers', 'kmersFiltered': 'kmers.fsplit0', 'checksum': 'e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af', 'cacheId': 'e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2447928}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit0
+DEBUG:File: {'count': '1', 'genome': 'LM040', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM040.fa', 'tempFile': 'fsplit1', 'jellyfishDB': 'fsplit1.Jelly', 'kmers': 'fsplit1.kmers', 'kmersFiltered': 'kmers.fsplit1', 'checksum': '9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a', 'cacheId': '9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2517832}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit1
+DEBUG:File: {'count': '2', 'genome': 'LM031', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM031.fa', 'tempFile': 'fsplit2', 'jellyfishDB': 'fsplit2.Jelly', 'kmers': 'fsplit2.kmers', 'kmersFiltered': 'kmers.fsplit2', 'checksum': '2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de', 'cacheId': '2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2494201}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit2
+DEBUG:File: {'count': '3', 'genome': 'NIH05001', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/NIH05001.fa', 'tempFile': 'fsplit3', 'jellyfishDB': 'fsplit3.Jelly', 'kmers': 'fsplit3.kmers', 'kmersFiltered': 'kmers.fsplit3', 'checksum': '11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be', 'cacheId': '11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2573807}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit3
+DEBUG:File: {'count': '4', 'genome': 'LM088', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM088.fa', 'tempFile': 'fsplit4', 'jellyfishDB': 'fsplit4.Jelly', 'kmers': 'fsplit4.kmers', 'kmersFiltered': 'kmers.fsplit4', 'checksum': 'eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0', 'cacheId': 'eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2459736}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit4
+DEBUG:File: {'count': '5', 'genome': 'LM061', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM061.fa', 'tempFile': 'fsplit5', 'jellyfishDB': 'fsplit5.Jelly', 'kmers': 'fsplit5.kmers', 'kmersFiltered': 'kmers.fsplit5', 'checksum': 'e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35', 'cacheId': 'e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2534475}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit5
+DEBUG:File: {'count': '6', 'genome': 'LM087', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM087.fa', 'tempFile': 'fsplit6', 'jellyfishDB': 'fsplit6.Jelly', 'kmers': 'fsplit6.kmers', 'kmersFiltered': 'kmers.fsplit6', 'checksum': '166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1', 'cacheId': '166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2447838}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit6
+DEBUG:File: {'count': '7', 'genome': 'C_acc_ATCC49725', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/C_acc_ATCC49725.fa', 'tempFile': 'fsplit7', 'jellyfishDB': 'fsplit7.Jelly', 'kmers': 'fsplit7.kmers', 'kmersFiltered': 'kmers.fsplit7', 'checksum': '67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46', 'cacheId': '67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2404469}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit7
+DEBUG:File: {'count': '8', 'genome': 'LM018', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM018.fa', 'tempFile': 'fsplit8', 'jellyfishDB': 'fsplit8.Jelly', 'kmers': 'fsplit8.kmers', 'kmersFiltered': 'kmers.fsplit8', 'checksum': 'bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e', 'cacheId': 'bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2425384}
+DEBUG:No filtering to do, renaming kmers file to filtered kmers filename for fsplit8
+DEBUG:Caching results.  Files to cache: [{'count': '0', 'genome': 'LM095', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM095.fa', 'tempFile': 'fsplit0', 'jellyfishDB': 'fsplit0.Jelly', 'kmers': 'fsplit0.kmers', 'kmersFiltered': 'kmers.fsplit0', 'checksum': 'e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af', 'cacheId': 'e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2447928}, {'count': '1', 'genome': 'LM040', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM040.fa', 'tempFile': 'fsplit1', 'jellyfishDB': 'fsplit1.Jelly', 'kmers': 'fsplit1.kmers', 'kmersFiltered': 'kmers.fsplit1', 'checksum': '9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a', 'cacheId': '9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2517832}, {'count': '2', 'genome': 'LM031', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM031.fa', 'tempFile': 'fsplit2', 'jellyfishDB': 'fsplit2.Jelly', 'kmers': 'fsplit2.kmers', 'kmersFiltered': 'kmers.fsplit2', 'checksum': '2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de', 'cacheId': '2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2494201}, {'count': '3', 'genome': 'NIH05001', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/NIH05001.fa', 'tempFile': 'fsplit3', 'jellyfishDB': 'fsplit3.Jelly', 'kmers': 'fsplit3.kmers', 'kmersFiltered': 'kmers.fsplit3', 'checksum': '11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be', 'cacheId': '11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2573807}, {'count': '4', 'genome': 'LM088', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM088.fa', 'tempFile': 'fsplit4', 'jellyfishDB': 'fsplit4.Jelly', 'kmers': 'fsplit4.kmers', 'kmersFiltered': 'kmers.fsplit4', 'checksum': 'eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0', 'cacheId': 'eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2459736}, {'count': '5', 'genome': 'LM061', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM061.fa', 'tempFile': 'fsplit5', 'jellyfishDB': 'fsplit5.Jelly', 'kmers': 'fsplit5.kmers', 'kmersFiltered': 'kmers.fsplit5', 'checksum': 'e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35', 'cacheId': 'e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2534475}, {'count': '6', 'genome': 'LM087', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM087.fa', 'tempFile': 'fsplit6', 'jellyfishDB': 'fsplit6.Jelly', 'kmers': 'fsplit6.kmers', 'kmersFiltered': 'kmers.fsplit6', 'checksum': '166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1', 'cacheId': '166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2447838}, {'count': '7', 'genome': 'C_acc_ATCC49725', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/C_acc_ATCC49725.fa', 'tempFile': 'fsplit7', 'jellyfishDB': 'fsplit7.Jelly', 'kmers': 'fsplit7.kmers', 'kmersFiltered': 'kmers.fsplit7', 'checksum': '67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46', 'cacheId': '67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2404469}, {'count': '8', 'genome': 'LM018', 'inputFile': '/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM018.fa', 'tempFile': 'fsplit8', 'jellyfishDB': 'fsplit8.Jelly', 'kmers': 'fsplit8.kmers', 'kmersFiltered': 'kmers.fsplit8', 'checksum': 'bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e', 'cacheId': 'bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e.21', 'freqProcesses': [], 'minFreq': 1, 'length': 2425384}]
+DEBUG:Cached filtered kmers from kmers.fsplit0 to /root/kSNP/FilteredKmersCache/e153f938ba14bc509cb695d4750f038fc905c1a8294cd6ea2d5c672d1cdea7af.21.
+DEBUG:Cached filtered kmers from kmers.fsplit1 to /root/kSNP/FilteredKmersCache/9579880400f1e9aebee9cbb344adf8b2b3faf14dc39126eb77161491da58c29a.21.
+DEBUG:Cached filtered kmers from kmers.fsplit2 to /root/kSNP/FilteredKmersCache/2a9884f5f237063df78f5372cc3a271b805e4e0b4b6515e4e690c6fe4da1e1de.21.
+DEBUG:Cached filtered kmers from kmers.fsplit3 to /root/kSNP/FilteredKmersCache/11f48579cf1ae88fcd41f2270ce779fb5e3503fa84ea87b3c9db3c60d20ea0be.21.
+DEBUG:Cached filtered kmers from kmers.fsplit4 to /root/kSNP/FilteredKmersCache/eff54bbfae196b186ac1749d6dd703c81695dc913eaf3670c3d1e8f510d38bb0.21.
+DEBUG:Cached filtered kmers from kmers.fsplit5 to /root/kSNP/FilteredKmersCache/e2c3bd6c42efc9e64fc80ac480c42b162ab761b4cc6f7483aaf6c5d833e52e35.21.
+DEBUG:Cached filtered kmers from kmers.fsplit6 to /root/kSNP/FilteredKmersCache/166833291882dabca0b6e905d58b8f9b28937e1f1a6b5b48bfbdf31471803cb1.21.
+DEBUG:Cached filtered kmers from kmers.fsplit7 to /root/kSNP/FilteredKmersCache/67b278cca6e81914f5a81e57cb08a4d1d1d7b181453f18b5acde1296eb0a2c46.21.
+DEBUG:Cached filtered kmers from kmers.fsplit8 to /root/kSNP/FilteredKmersCache/bdb17a4a4db57c9c7f884536b6b70e74aad8283723a733607a5c66f6e725519e.21.
+0	LM095	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM095.fa
+1	LM040	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM040.fa
+2	LM031	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM031.fa
+3	NIH05001	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/NIH05001.fa
+4	LM088	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM088.fa
+5	LM061	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM061.fa
+6	LM087	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM087.fa
+7	C_acc_ATCC49725	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/C_acc_ATCC49725.fa
+8	LM018	/mnt/efs/scratch/sunit/Github/FischbachLab/s_epi/genomes/genome_w_plasmid/LM018.fa
+fsplit0	1
+fsplit1	1
+fsplit2	1
+fsplit3	1
+fsplit4	1
+fsplit5	1
+fsplit6	1
+fsplit7	1
+fsplit8	1
+Finished retrieving filtered kmers
+Fri Jan 12 19:30:25 UTC 2024
+Fri Jan 12 19:30:25 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 28 10 3 Partitioning kmer counts for parallelization
+Fri Jan 12 19:30:26 UTC 2024
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit0
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit1
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit2
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit3
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit4
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit5
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit6
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit7
+/usr/local/kSNP4.1pkg/partitionKmers --partition partitions.txt --suffix .part kmers.fsplit8
+Fri Jan 12 19:30:30 UTC 2024
+Finished partitioning new kmer files.
+/usr/local/kSNP4.1pkg/statusupdate 33 10 4 Finding SNPs 4 1 Generating SNPs within partitions
+Fri Jan 12 19:30:30 UTC 2024
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part0 kmers.fsplit1.part0 kmers.fsplit2.part0 kmers.fsplit3.part0 kmers.fsplit4.part0 kmers.fsplit5.part0 kmers.fsplit6.part0 kmers.fsplit7.part0 kmers.fsplit8.part0
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part1 kmers.fsplit1.part1 kmers.fsplit2.part1 kmers.fsplit3.part1 kmers.fsplit4.part1 kmers.fsplit5.part1 kmers.fsplit6.part1 kmers.fsplit7.part1 kmers.fsplit8.part1
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part2 kmers.fsplit1.part2 kmers.fsplit2.part2 kmers.fsplit3.part2 kmers.fsplit4.part2 kmers.fsplit5.part2 kmers.fsplit6.part2 kmers.fsplit7.part2 kmers.fsplit8.part2
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part3 kmers.fsplit1.part3 kmers.fsplit2.part3 kmers.fsplit3.part3 kmers.fsplit4.part3 kmers.fsplit5.part3 kmers.fsplit6.part3 kmers.fsplit7.part3 kmers.fsplit8.part3
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part4 kmers.fsplit1.part4 kmers.fsplit2.part4 kmers.fsplit3.part4 kmers.fsplit4.part4 kmers.fsplit5.part4 kmers.fsplit6.part4 kmers.fsplit7.part4 kmers.fsplit8.part4
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part5 kmers.fsplit1.part5 kmers.fsplit2.part5 kmers.fsplit3.part5 kmers.fsplit4.part5 kmers.fsplit5.part5 kmers.fsplit6.part5 kmers.fsplit7.part5 kmers.fsplit8.part5
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part6 kmers.fsplit1.part6 kmers.fsplit2.part6 kmers.fsplit3.part6 kmers.fsplit4.part6 kmers.fsplit5.part6 kmers.fsplit6.part6 kmers.fsplit7.part6 kmers.fsplit8.part6
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part7 kmers.fsplit1.part7 kmers.fsplit2.part7 kmers.fsplit3.part7 kmers.fsplit4.part7 kmers.fsplit5.part7 kmers.fsplit6.part7 kmers.fsplit7.part7 kmers.fsplit8.part7
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part8 kmers.fsplit1.part8 kmers.fsplit2.part8 kmers.fsplit3.part8 kmers.fsplit4.part8 kmers.fsplit5.part8 kmers.fsplit6.part8 kmers.fsplit7.part8 kmers.fsplit8.part8
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part9 kmers.fsplit1.part9 kmers.fsplit2.part9 kmers.fsplit3.part9 kmers.fsplit4.part9 kmers.fsplit5.part9 kmers.fsplit6.part9 kmers.fsplit7.part9 kmers.fsplit8.part9
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part10 kmers.fsplit1.part10 kmers.fsplit2.part10 kmers.fsplit3.part10 kmers.fsplit4.part10 kmers.fsplit5.part10 kmers.fsplit6.part10 kmers.fsplit7.part10 kmers.fsplit8.part10
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part11 kmers.fsplit1.part11 kmers.fsplit2.part11 kmers.fsplit3.part11 kmers.fsplit4.part11 kmers.fsplit5.part11 kmers.fsplit6.part11 kmers.fsplit7.part11 kmers.fsplit8.part11
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part12 kmers.fsplit1.part12 kmers.fsplit2.part12 kmers.fsplit3.part12 kmers.fsplit4.part12 kmers.fsplit5.part12 kmers.fsplit6.part12 kmers.fsplit7.part12 kmers.fsplit8.part12
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part13 kmers.fsplit1.part13 kmers.fsplit2.part13 kmers.fsplit3.part13 kmers.fsplit4.part13 kmers.fsplit5.part13 kmers.fsplit6.part13 kmers.fsplit7.part13 kmers.fsplit8.part13
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part14 kmers.fsplit1.part14 kmers.fsplit2.part14 kmers.fsplit3.part14 kmers.fsplit4.part14 kmers.fsplit5.part14 kmers.fsplit6.part14 kmers.fsplit7.part14 kmers.fsplit8.part14
+/usr/local/kSNP4.1pkg/find_snps --info --fasta-suffix .SNPs.fasta --snp-suffix .SNPs kmers.fsplit0.part15 kmers.fsplit1.part15 kmers.fsplit2.part15 kmers.fsplit3.part15 kmers.fsplit4.part15 kmers.fsplit5.part15 kmers.fsplit6.part15 kmers.fsplit7.part15 kmers.fsplit8.part15
+INFO:Loading genome: kmers.fsplit0.part10
+INFO:Loading genome: kmers.fsplit0.part12
+INFO:Loading genome: kmers.fsplit0.part0
+INFO:Loading genome: kmers.fsplit0.part8
+INFO:Loading genome: kmers.fsplit0.part9
+INFO:Loading genome: kmers.fsplit0.part3
+INFO:Loading genome: kmers.fsplit0.part6
+INFO:Loading genome: kmers.fsplit0.part7
+INFO:Loading genome: kmers.fsplit0.part4
+INFO:Loading genome: kmers.fsplit0.part14
+INFO:Loading genome: kmers.fsplit0.part13
+INFO:Loading genome: kmers.fsplit0.part5
+INFO:Loading genome: kmers.fsplit0.part11
+INFO:Loading genome: kmers.fsplit0.part2
+INFO:Loading genome: kmers.fsplit0.part1
+INFO:Loading genome: kmers.fsplit0.part15
+INFO:Loading genome: kmers.fsplit1.part10
+INFO:Loading genome: kmers.fsplit1.part7
+INFO:Loading genome: kmers.fsplit1.part3
+INFO:Loading genome: kmers.fsplit1.part12
+INFO:Loading genome: kmers.fsplit1.part0
+INFO:Loading genome: kmers.fsplit1.part8
+INFO:Loading genome: kmers.fsplit1.part5
+INFO:Loading genome: kmers.fsplit1.part6
+INFO:Loading genome: kmers.fsplit1.part9
+INFO:Loading genome: kmers.fsplit1.part14
+INFO:Loading genome: kmers.fsplit1.part13
+INFO:Loading genome: kmers.fsplit1.part4
+INFO:Loading genome: kmers.fsplit1.part2
+INFO:Loading genome: kmers.fsplit1.part1
+INFO:Loading genome: kmers.fsplit1.part11
+INFO:Loading genome: kmers.fsplit1.part15
+INFO:Loading genome: kmers.fsplit2.part12
+INFO:Loading genome: kmers.fsplit2.part5
+INFO:Loading genome: kmers.fsplit2.part7
+INFO:Loading genome: kmers.fsplit2.part8
+INFO:Loading genome: kmers.fsplit2.part10
+INFO:Loading genome: kmers.fsplit2.part3
+INFO:Loading genome: kmers.fsplit2.part9
+INFO:Loading genome: kmers.fsplit2.part6
+INFO:Loading genome: kmers.fsplit2.part14
+INFO:Loading genome: kmers.fsplit2.part0
+INFO:Loading genome: kmers.fsplit2.part4
+INFO:Loading genome: kmers.fsplit2.part13
+INFO:Loading genome: kmers.fsplit2.part2
+INFO:Loading genome: kmers.fsplit2.part11
+INFO:Loading genome: kmers.fsplit2.part1
+INFO:Loading genome: kmers.fsplit2.part15
+INFO:Loading genome: kmers.fsplit3.part12
+INFO:Loading genome: kmers.fsplit3.part7
+INFO:Loading genome: kmers.fsplit3.part8
+INFO:Loading genome: kmers.fsplit3.part10
+INFO:Loading genome: kmers.fsplit3.part3
+INFO:Loading genome: kmers.fsplit3.part5
+INFO:Loading genome: kmers.fsplit3.part9
+INFO:Loading genome: kmers.fsplit3.part14
+INFO:Loading genome: kmers.fsplit3.part6
+INFO:Loading genome: kmers.fsplit3.part0
+INFO:Loading genome: kmers.fsplit3.part13
+INFO:Loading genome: kmers.fsplit3.part2
+INFO:Loading genome: kmers.fsplit3.part4
+INFO:Loading genome: kmers.fsplit3.part11
+INFO:Loading genome: kmers.fsplit3.part1
+INFO:Loading genome: kmers.fsplit3.part15
+INFO:Loading genome: kmers.fsplit4.part12
+INFO:Loading genome: kmers.fsplit4.part10
+INFO:Loading genome: kmers.fsplit4.part3
+INFO:Loading genome: kmers.fsplit4.part7
+INFO:Loading genome: kmers.fsplit4.part8
+INFO:Loading genome: kmers.fsplit4.part5
+INFO:Loading genome: kmers.fsplit4.part6
+INFO:Loading genome: kmers.fsplit4.part0
+INFO:Loading genome: kmers.fsplit4.part14
+INFO:Loading genome: kmers.fsplit4.part9
+INFO:Loading genome: kmers.fsplit4.part13
+INFO:Loading genome: kmers.fsplit4.part2
+INFO:Loading genome: kmers.fsplit4.part1
+INFO:Loading genome: kmers.fsplit4.part15
+INFO:Loading genome: kmers.fsplit4.part4
+INFO:Loading genome: kmers.fsplit4.part11
+INFO:Loading genome: kmers.fsplit5.part12
+INFO:Loading genome: kmers.fsplit5.part10
+INFO:Loading genome: kmers.fsplit5.part3
+INFO:Loading genome: kmers.fsplit5.part8
+INFO:Loading genome: kmers.fsplit5.part7
+INFO:Loading genome: kmers.fsplit5.part6
+INFO:Loading genome: kmers.fsplit5.part5
+INFO:Loading genome: kmers.fsplit5.part0
+INFO:Loading genome: kmers.fsplit5.part14
+INFO:Loading genome: kmers.fsplit5.part9
+INFO:Loading genome: kmers.fsplit5.part13
+INFO:Loading genome: kmers.fsplit5.part2
+INFO:Loading genome: kmers.fsplit5.part1
+INFO:Loading genome: kmers.fsplit5.part4
+INFO:Loading genome: kmers.fsplit5.part15
+INFO:Loading genome: kmers.fsplit6.part10
+INFO:Loading genome: kmers.fsplit6.part12
+INFO:Loading genome: kmers.fsplit6.part3
+INFO:Loading genome: kmers.fsplit6.part8
+INFO:Loading genome: kmers.fsplit6.part7
+INFO:Loading genome: kmers.fsplit5.part11
+INFO:Loading genome: kmers.fsplit6.part6
+INFO:Loading genome: kmers.fsplit6.part5
+INFO:Loading genome: kmers.fsplit6.part0
+INFO:Loading genome: kmers.fsplit6.part14
+INFO:Loading genome: kmers.fsplit6.part9
+INFO:Loading genome: kmers.fsplit6.part13
+INFO:Loading genome: kmers.fsplit6.part1
+INFO:Loading genome: kmers.fsplit6.part2
+INFO:Loading genome: kmers.fsplit6.part4
+INFO:Loading genome: kmers.fsplit7.part12
+INFO:Loading genome: kmers.fsplit6.part15
+INFO:Loading genome: kmers.fsplit7.part8
+INFO:Loading genome: kmers.fsplit7.part3
+INFO:Loading genome: kmers.fsplit7.part7
+INFO:Loading genome: kmers.fsplit7.part10
+INFO:Loading genome: kmers.fsplit7.part6
+INFO:Loading genome: kmers.fsplit7.part5
+INFO:Loading genome: kmers.fsplit7.part9
+INFO:Loading genome: kmers.fsplit7.part0
+INFO:Loading genome: kmers.fsplit6.part11
+INFO:Loading genome: kmers.fsplit7.part14
+INFO:Loading genome: kmers.fsplit8.part3
+INFO:Loading genome: kmers.fsplit8.part8
+INFO:Loading genome: kmers.fsplit7.part1
+INFO:Loading genome: kmers.fsplit7.part13
+INFO:Loading genome: kmers.fsplit8.part6
+INFO:Loading genome: kmers.fsplit8.part0
+INFO:Loading genome: kmers.fsplit7.part2
+INFO:Loading genome: kmers.fsplit8.part14
+INFO:Loading genome: kmers.fsplit7.part4
+INFO:Loading genome: kmers.fsplit8.part7
+INFO:Loading genome: kmers.fsplit7.part15
+INFO:Loading genome: kmers.fsplit8.part1
+INFO:Loading genome: kmers.fsplit8.part12
+INFO:Loading genome: kmers.fsplit7.part11
+INFO:Loading genome: kmers.fsplit8.part2
+INFO:Loading genome: kmers.fsplit8.part5
+INFO:Loading genome: kmers.fsplit8.part15
+INFO:Loading genome: kmers.fsplit8.part9
+INFO:Loading genome: kmers.fsplit8.part13
+INFO:Loading genome: kmers.fsplit8.part4
+INFO:Loading genome: kmers.fsplit8.part11
+INFO:Loading genome: kmers.fsplit8.part10
+INFO:Found 3888 SNPs in this partition, wrote 24278 SNP kmers
+INFO:Found 4414 SNPs in this partition, wrote 27438 SNP kmers
+INFO:Found 5028 SNPs in this partition, wrote 31647 SNP kmers
+INFO:Found 4312 SNPs in this partition, wrote 27616 SNP kmers
+INFO:Found 4400 SNPs in this partition, wrote 27250 SNP kmers
+INFO:Found 4342 SNPs in this partition, wrote 27492 SNP kmers
+INFO:Found 3988 SNPs in this partition, wrote 24922 SNP kmers
+INFO:Found 4941 SNPs in this partition, wrote 31455 SNP kmers
+INFO:Found 3396 SNPs in this partition, wrote 21047 SNP kmers
+INFO:Found 5014 SNPs in this partition, wrote 31780 SNP kmers
+INFO:Found 3385 SNPs in this partition, wrote 21013 SNP kmers
+INFO:Found 3652 SNPs in this partition, wrote 22842 SNP kmers
+INFO:Found 6031 SNPs in this partition, wrote 39328 SNP kmers
+INFO:Found 5934 SNPs in this partition, wrote 38322 SNP kmers
+INFO:Found 3907 SNPs in this partition, wrote 24739 SNP kmers
+INFO:Found 4437 SNPs in this partition, wrote 27774 SNP kmers
+Fri Jan 12 19:30:38 UTC 2024
+Found SNPs
+/usr/local/kSNP4.1pkg/statusupdate 41 10 4 Finding SNPs 4 2 Combining partitions into FASTA files for mummer
+Fri Jan 12 19:30:39 UTC 2024
+Re-combined SNP fasta files for input into mummer
+Fri Jan 12 19:30:39 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 42 10 4 Finding SNPs 4 3 Combining partitions into complete list of SNPs found
+Fri Jan 12 19:30:40 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 43 10 4 Finding SNPs 4 4 Done finding SNPs
+Re-combined SNP fasta files for input into mummer
+Fri Jan 12 19:30:40 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 43 10 5 Running mummer to find SNP positions for annotation 0 0 Starting
+Fri Jan 12 19:30:41 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 44 10 5 Running mummer to find SNP positions for annotation 0 0 Done
+/usr/local/kSNP4.1pkg/statusupdate 44 10 6 Processing SNPs data 4 1 Adding position data to all_SNPs
+genome: LM095 in .fsplit0
+No positions file kmers.fsplit0.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM040 in .fsplit1
+No positions file kmers.fsplit1.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM031 in .fsplit2
+No positions file kmers.fsplit2.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: NIH05001 in .fsplit3
+No positions file kmers.fsplit3.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM088 in .fsplit4
+No positions file kmers.fsplit4.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM061 in .fsplit5
+No positions file kmers.fsplit5.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM087 in .fsplit6
+No positions file kmers.fsplit6.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: C_acc_ATCC49725 in .fsplit7
+No positions file kmers.fsplit7.SNP.positions found, generating all_SNPs_unsorted without position data.
+genome: LM018 in .fsplit8
+No positions file kmers.fsplit8.SNP.positions found, generating all_SNPs_unsorted without position data.
+/usr/local/kSNP4.1pkg/statusupdate 45 10 6 Processing SNPs data 4 2 Sorting SNPs
+/usr/local/kSNP4.1pkg/statusupdate 45 10 6 Processing SNPs data 4 3 Number and label SNPs
+/usr/local/kSNP4.1pkg/statusupdate 47 10 6 Processing SNPs data 4 4 Creating VCF file.
+Finished finding SNPs
+Fri Jan 12 19:30:44 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 47 10 7 Generating phylogenic trees 3 0 Setup
+/usr/local/kSNP4.1pkg/statusupdate 48 10 7 Generating phylogenic trees 3 1 parsimony
+Proccessing SNPs from SNPs_all
+Matrix already created, skipping
+Building parsimony tree
+
+Parsimonator version 1.0.2 a fast open-source code for builiding DNA parsimony start trees
+
+Released under GNU GPL in June 2011 by Alexandros Stamatakis
+
+Alignment has 71069 sites and 9 taxa
+
+100 randomized stepwise addition order parsimony trees with a couple of SPR moves will be computed
+
+Parsimony tree [0] with length 43394 computed in 0.010742 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.0
+Parsimony tree [1] with length 43394 computed in 0.010379 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.1
+Parsimony tree [2] with length 43394 computed in 0.008515 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.2
+Parsimony tree [3] with length 43394 computed in 0.010837 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.3
+Parsimony tree [4] with length 43394 computed in 0.009875 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.4
+Parsimony tree [5] with length 43394 computed in 0.009624 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.5
+Parsimony tree [6] with length 43394 computed in 0.011312 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.6
+Parsimony tree [7] with length 43394 computed in 0.009494 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.7
+Parsimony tree [8] with length 43394 computed in 0.010171 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.8
+Parsimony tree [9] with length 43394 computed in 0.009270 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.9
+Parsimony tree [10] with length 43394 computed in 0.010456 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.10
+Parsimony tree [11] with length 43394 computed in 0.009021 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.11
+Parsimony tree [12] with length 43394 computed in 0.010449 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.12
+Parsimony tree [13] with length 43394 computed in 0.011096 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.13
+Parsimony tree [14] with length 43394 computed in 0.010202 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.14
+Parsimony tree [15] with length 43394 computed in 0.011119 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.15
+Parsimony tree [16] with length 43394 computed in 0.009307 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.16
+Parsimony tree [17] with length 43394 computed in 0.009937 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.17
+Parsimony tree [18] with length 43394 computed in 0.009299 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.18
+Parsimony tree [19] with length 43394 computed in 0.010409 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.19
+Parsimony tree [20] with length 43394 computed in 0.010517 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.20
+Parsimony tree [21] with length 43394 computed in 0.009198 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.21
+Parsimony tree [22] with length 43394 computed in 0.008607 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.22
+Parsimony tree [23] with length 43394 computed in 0.009556 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.23
+Parsimony tree [24] with length 43394 computed in 0.012219 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.24
+Parsimony tree [25] with length 43394 computed in 0.008760 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.25
+Parsimony tree [26] with length 43394 computed in 0.009600 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.26
+Parsimony tree [27] with length 43394 computed in 0.010910 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.27
+Parsimony tree [28] with length 43394 computed in 0.010582 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.28
+Parsimony tree [29] with length 43394 computed in 0.010062 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.29
+Parsimony tree [30] with length 43394 computed in 0.016900 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.30
+Parsimony tree [31] with length 43394 computed in 0.011247 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.31
+Parsimony tree [32] with length 43394 computed in 0.016477 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.32
+Parsimony tree [33] with length 43394 computed in 0.016241 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.33
+Parsimony tree [34] with length 43394 computed in 0.009970 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.34
+Parsimony tree [35] with length 43394 computed in 0.015892 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.35
+Parsimony tree [36] with length 43394 computed in 0.009725 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.36
+Parsimony tree [37] with length 43394 computed in 0.009719 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.37
+Parsimony tree [38] with length 43394 computed in 0.010745 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.38
+Parsimony tree [39] with length 43394 computed in 0.009677 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.39
+Parsimony tree [40] with length 43394 computed in 0.009098 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.40
+Parsimony tree [41] with length 43394 computed in 0.010543 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.41
+Parsimony tree [42] with length 43394 computed in 0.011634 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.42
+Parsimony tree [43] with length 43394 computed in 0.008689 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.43
+Parsimony tree [44] with length 43394 computed in 0.009240 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.44
+Parsimony tree [45] with length 43394 computed in 0.010476 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.45
+Parsimony tree [46] with length 43394 computed in 0.009190 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.46
+Parsimony tree [47] with length 43394 computed in 0.010244 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.47
+Parsimony tree [48] with length 43394 computed in 0.009681 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.48
+Parsimony tree [49] with length 43394 computed in 0.010465 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.49
+Parsimony tree [50] with length 43394 computed in 0.009360 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.50
+Parsimony tree [51] with length 43394 computed in 0.033179 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.51
+Parsimony tree [52] with length 43394 computed in 0.010754 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.52
+Parsimony tree [53] with length 43394 computed in 0.009520 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.53
+Parsimony tree [54] with length 43394 computed in 0.009334 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.54
+Parsimony tree [55] with length 43394 computed in 0.011037 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.55
+Parsimony tree [56] with length 43394 computed in 0.009264 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.56
+Parsimony tree [57] with length 43394 computed in 0.009165 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.57
+Parsimony tree [58] with length 43394 computed in 0.010071 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.58
+Parsimony tree [59] with length 43394 computed in 0.011380 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.59
+Parsimony tree [60] with length 43394 computed in 0.010343 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.60
+Parsimony tree [61] with length 43394 computed in 0.008628 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.61
+Parsimony tree [62] with length 43394 computed in 0.009552 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.62
+Parsimony tree [63] with length 43394 computed in 0.009543 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.63
+Parsimony tree [64] with length 43394 computed in 0.011232 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.64
+Parsimony tree [65] with length 43394 computed in 0.009348 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.65
+Parsimony tree [66] with length 43394 computed in 0.009633 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.66
+Parsimony tree [67] with length 43394 computed in 0.010403 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.67
+Parsimony tree [68] with length 43394 computed in 0.010656 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.68
+Parsimony tree [69] with length 43394 computed in 0.010678 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.69
+Parsimony tree [70] with length 43394 computed in 0.009749 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.70
+Parsimony tree [71] with length 43394 computed in 0.009473 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.71
+Parsimony tree [72] with length 43394 computed in 0.009594 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.72
+Parsimony tree [73] with length 43394 computed in 0.009257 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.73
+Parsimony tree [74] with length 43394 computed in 0.010892 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.74
+Parsimony tree [75] with length 43394 computed in 0.010814 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.75
+Parsimony tree [76] with length 43394 computed in 0.008709 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.76
+Parsimony tree [77] with length 43394 computed in 0.011130 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.77
+Parsimony tree [78] with length 43394 computed in 0.010053 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.78
+Parsimony tree [79] with length 43394 computed in 0.009540 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.79
+Parsimony tree [80] with length 43394 computed in 0.009329 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.80
+Parsimony tree [81] with length 43394 computed in 0.010555 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.81
+Parsimony tree [82] with length 43394 computed in 0.008731 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.82
+Parsimony tree [83] with length 43394 computed in 0.011049 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.83
+Parsimony tree [84] with length 43394 computed in 0.011577 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.84
+Parsimony tree [85] with length 43394 computed in 0.011317 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.85
+Parsimony tree [86] with length 43394 computed in 0.009933 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.86
+Parsimony tree [87] with length 43394 computed in 0.010089 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.87
+Parsimony tree [88] with length 43394 computed in 0.009208 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.88
+Parsimony tree [89] with length 43394 computed in 0.012587 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.89
+Parsimony tree [90] with length 43394 computed in 0.008869 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.90
+Parsimony tree [91] with length 43394 computed in 0.009520 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.91
+Parsimony tree [92] with length 43394 computed in 0.010702 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.92
+Parsimony tree [93] with length 43394 computed in 0.010823 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.93
+Parsimony tree [94] with length 43394 computed in 0.009170 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.94
+Parsimony tree [95] with length 43394 computed in 0.010932 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.95
+Parsimony tree [96] with length 43394 computed in 0.011609 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.96
+Parsimony tree [97] with length 43394 computed in 0.009311 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.97
+Parsimony tree [98] with length 43394 computed in 0.010089 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.98
+Parsimony tree [99] with length 43394 computed in 0.014027 seconds written to file: RAxML_parsimonyTree.SNPs_all.parsimony.99
+Most parsimonious (shortest, best) trees generated have length: 43394
+Number of most parsimonious trees from SNPs_all: 100
+number nodes 17
+number new nodes 17
+FastTree Version 2.1.3 SSE3, OpenMP (16 threads)
+Alignment: SNPs_all_matrix.fasta
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Start at tree from outtree.resolved (no NNI) (no SPR)
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+Pseudocount weight for comparing sequences with little overlap: 1.000
+Total branch-length 5.543 after 0.10 sec
+      0.10 seconds: ML Lengths 1 of 7 splits
+1 rounds ML lengths: LogLk = -359035.659 Max-change 3.4135 Time 0.53
+      0.53 seconds: Optimizing GTR model, step 1 of 12
+      1.08 seconds: Optimizing GTR model, step 2 of 12
+      1.55 seconds: Optimizing GTR model, step 3 of 12
+      2.00 seconds: Optimizing GTR model, step 4 of 12
+      2.71 seconds: Optimizing GTR model, step 5 of 12
+      3.19 seconds: Optimizing GTR model, step 6 of 12
+      3.70 seconds: Optimizing GTR model, step 7 of 12
+      4.18 seconds: Optimizing GTR model, step 8 of 12
+      4.52 seconds: Optimizing GTR model, step 9 of 12
+      4.83 seconds: Optimizing GTR model, step 10 of 12
+      5.13 seconds: Optimizing GTR model, step 11 of 12
+      5.47 seconds: Optimizing GTR model, step 12 of 12
+GTR Frequencies: 0.2799 0.2221 0.2215 0.2765
+GTR rates(ac ag at cg ct gt) 1.2127 7.6182 2.3740 0.1932 7.9572 1.0000
+      5.84 seconds: ML Lengths 1 of 7 splits
+      6.40 seconds: Site likelihoods with rate category 1 of 20
+      6.52 seconds: Site likelihoods with rate category 4 of 20
+      6.63 seconds: Site likelihoods with rate category 7 of 20
+      6.74 seconds: Site likelihoods with rate category 10 of 20
+      6.85 seconds: Site likelihoods with rate category 13 of 20
+      6.96 seconds: Site likelihoods with rate category 16 of 20
+      7.07 seconds: Site likelihoods with rate category 19 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.737 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+      7.18 seconds: ML Lengths 1 of 7 splits
+2 rounds ML lengths: LogLk = -328437.825 Max-change 0.8645 Time 7.73
+      7.72 seconds: ML Lengths 1 of 7 splits
+3 rounds ML lengths: LogLk = -328436.038 Max-change 0.0054 Time 8.25
+     12.26 seconds: Site likelihoods with rate category 1 of 20
+     12.37 seconds: Site likelihoods with rate category 4 of 20
+     12.48 seconds: Site likelihoods with rate category 7 of 20
+     12.58 seconds: Site likelihoods with rate category 10 of 20
+     12.69 seconds: Site likelihoods with rate category 13 of 20
+     12.80 seconds: Site likelihoods with rate category 16 of 20
+     12.91 seconds: Site likelihoods with rate category 19 of 20
+     13.46 seconds: Optimizing alpha round 2
+Gamma(20) LogLk = -335740.133 alpha = 9.983 rescaling lengths by 1.010
+Total time: 13.76 seconds Unique: 9/9 Bad splits: 1/6 Worst delta-LogLk 15.290
+Finding nodes
+
+--------------------- WARNING ---------------------
+MSG: Node requested for reroot is already the root node!
+---------------------------------------------------
+number of nodes: 16
+Placing SNPs on nodes SNPs_all tree
+2024-01-12T19:31:04 DEBUG:Commandline options, as parsed: Namespace(SNPsFile=['SNPs_all'], Tree=['tree.SNPs_all.parsimony.tre'], TreeOutput=['tree_nodeLabel.SNPs_all.parsimony.tre'], OutputSigCounts=['Node_SNP_counts.SNPs_all.parsimony'], debug=True, info=True, quiet=False)
+2024-01-12T19:31:04 INFO:SNPs2nodes starting.
+2024-01-12T19:31:04 DEBUG:Loaded tree from tree.SNPs_all.parsimony.tre
+2024-01-12T19:31:04 DEBUG:Length(clades): 16
+2024-01-12T19:31:04 DEBUG:Length(IDsInNode): 31
+2024-01-12T19:31:04 DEBUG:Done reading nodes list
+2024-01-12T19:31:04 INFO:Loaded nodes for tree of 9 genomes from tree.SNPs_all.parsimony.tre
+2024-01-12T19:31:04 DEBUG:Starting to group nodes
+2024-01-12T19:31:04 DEBUG:Processed 10000 SNPs, currently on AAGATTTATT.GAGCTATAAG
+2024-01-12T19:31:05 DEBUG:Processed 20000 SNPs, currently on ACGTTTCTCC.TTTATATCTA
+2024-01-12T19:31:05 DEBUG:Processed 30000 SNPs, currently on ATATTTTAGA.CCTTCACCAT
+2024-01-12T19:31:05 DEBUG:Processed 40000 SNPs, currently on CAAGGTGGGC.CCTCGAACAA
+2024-01-12T19:31:05 DEBUG:Processed 50000 SNPs, currently on CTAATTCATT.CTATTTACAG
+2024-01-12T19:31:05 DEBUG:Processed 60000 SNPs, currently on GTAATAGAAG.ATTAGACATA
+2024-01-12T19:31:05 DEBUG:Processed 70000 SNPs, currently on TTAACCATAT.TTAAAAGGAA
+2024-01-12T19:31:05 DEBUG:Done grouping nodes
+2024-01-12T19:31:05 DEBUG:Core SNPs: 24
+2024-01-12T19:31:05 DEBUG:Groups: 142
+2024-01-12T19:31:05 DEBUG:Loci pointing to groups: 71069
+2024-01-12T19:31:05 DEBUG:Roots: 16
+2024-01-12T19:31:05 DEBUG:Loci: 71069
+2024-01-12T19:31:05 INFO:Loaded 71069 SNPs, 16 possible roots scored.
+2024-01-12T19:31:05 DEBUG:Starting to find best root
+2024-01-12T19:31:05 DEBUG:Best root: 3
+2024-01-12T19:31:05 DEBUG:Best score: 65936
+2024-01-12T19:31:05 DEBUG:Done finding best root
+2024-01-12T19:31:05 INFO:Found the best root (3) with score 65936.
+2024-01-12T19:31:05 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:05 DEBUG:Number homoplastic SNPs: 5133
+2024-01-12T19:31:05 DEBUG:Done writing homoplastic SNP counts
+2024-01-12T19:31:05 INFO:Finished writing COUNT_Homoplastic_SNPs
+2024-01-12T19:31:05 DEBUG:Finished sorting genomes for ordered display.
+2024-01-12T19:31:05 DEBUG:Starting to write node sig counts
+2024-01-12T19:31:05 DEBUG:Done writing node sig counts
+2024-01-12T19:31:05 INFO:Finished writing Node_SNP_counts.SNPs_all.parsimony
+2024-01-12T19:31:05 DEBUG:Starting to figure out homoplasy groups
+2024-01-12T19:31:05 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:05 DEBUG:Done writing homoplasy groups
+2024-01-12T19:31:05 INFO:Finished writing Homoplasy_groups
+2024-01-12T19:31:05 DEBUG:Starting to write cluster info
+2024-01-12T19:31:06 DEBUG:Done writing cluster info
+2024-01-12T19:31:06 INFO:Finished writing ClusterInfo
+2024-01-12T19:31:06 DEBUG:Starting to write rerooted tree
+2024-01-12T19:31:06 DEBUG:Tree: Tree(rooted=True, weight=1.0)
+    Clade(confidence=0.114, name='3')
+        Clade(branch_length=0.27097, name='1')
+            Clade(branch_length=0.01543, confidence=0.0, name='2')
+                Clade(branch_length=0.03902, name='LM018')
+                Clade(branch_length=0.06121, name='NIH05001')
+            Clade(branch_length=0.05806, name='LM088')
+        Clade(branch_length=5.03138, name='C_acc_ATCC49725')
+        Clade(branch_length=0.01364, confidence=0.815, name='4')
+            Clade(branch_length=1.34266, confidence=1.0, name='7')
+                Clade(branch_length=0.21916, name='LM031')
+                Clade(branch_length=0.19021, name='LM061')
+            Clade(branch_length=0.07775, confidence=1.0, name='5')
+                Clade(branch_length=0.13912, confidence=1.0, name='6')
+                    Clade(branch_length=0.00022, name='LM087')
+                    Clade(branch_length=0.00014, name='LM095')
+                Clade(branch_length=0.2427, name='LM040')
+2024-01-12T19:31:06 DEBUG:Done writing rerooted tree
+2024-01-12T19:31:06 INFO:Finished writing tree_nodeLabel.SNPs_all.parsimony.tre
+2024-01-12T19:31:06 INFO:SNPs2nodes finished.
+Finished placing SNPs on nodes SNPs_all parsimony tree
+Identifying core SNPs for use in creating trees
+Proccessing SNPs from core_SNPs
+Matrix already created, skipping
+Building parsimony tree
+
+Parsimonator version 1.0.2 a fast open-source code for builiding DNA parsimony start trees
+
+Released under GNU GPL in June 2011 by Alexandros Stamatakis
+
+Alignment has 24 sites and 9 taxa
+
+100 randomized stepwise addition order parsimony trees with a couple of SPR moves will be computed
+
+Parsimony tree [0] with length 0 computed in 0.008931 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.0
+Parsimony tree [1] with length 0 computed in 0.008278 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.1
+Parsimony tree [2] with length 0 computed in 0.008765 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.2
+Parsimony tree [3] with length 0 computed in 0.008084 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.3
+Parsimony tree [4] with length 0 computed in 0.008274 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.4
+Parsimony tree [5] with length 0 computed in 0.007834 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.5
+Parsimony tree [6] with length 0 computed in 0.007561 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.6
+Parsimony tree [7] with length 0 computed in 0.008128 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.7
+Parsimony tree [8] with length 0 computed in 0.008199 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.8
+Parsimony tree [9] with length 0 computed in 0.007953 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.9
+Parsimony tree [10] with length 0 computed in 0.007820 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.10
+Parsimony tree [11] with length 0 computed in 0.007923 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.11
+Parsimony tree [12] with length 0 computed in 0.007596 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.12
+Parsimony tree [13] with length 0 computed in 0.009821 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.13
+Parsimony tree [14] with length 0 computed in 0.007890 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.14
+Parsimony tree [15] with length 0 computed in 0.008336 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.15
+Parsimony tree [16] with length 0 computed in 0.008639 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.16
+Parsimony tree [17] with length 0 computed in 0.006983 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.17
+Parsimony tree [18] with length 0 computed in 0.016104 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.18
+Parsimony tree [19] with length 0 computed in 0.007976 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.19
+Parsimony tree [20] with length 0 computed in 0.008026 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.20
+Parsimony tree [21] with length 0 computed in 0.007670 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.21
+Parsimony tree [22] with length 0 computed in 0.007701 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.22
+Parsimony tree [23] with length 0 computed in 0.008491 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.23
+Parsimony tree [24] with length 0 computed in 0.008420 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.24
+Parsimony tree [25] with length 0 computed in 0.007941 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.25
+Parsimony tree [26] with length 0 computed in 0.007955 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.26
+Parsimony tree [27] with length 0 computed in 0.007864 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.27
+Parsimony tree [28] with length 0 computed in 0.007731 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.28
+Parsimony tree [29] with length 0 computed in 0.008315 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.29
+Parsimony tree [30] with length 0 computed in 0.007517 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.30
+Parsimony tree [31] with length 0 computed in 0.007035 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.31
+Parsimony tree [32] with length 0 computed in 0.008806 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.32
+Parsimony tree [33] with length 0 computed in 0.008590 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.33
+Parsimony tree [34] with length 0 computed in 0.009516 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.34
+Parsimony tree [35] with length 0 computed in 0.008468 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.35
+Parsimony tree [36] with length 0 computed in 0.007717 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.36
+Parsimony tree [37] with length 0 computed in 0.010246 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.37
+Parsimony tree [38] with length 0 computed in 0.007453 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.38
+Parsimony tree [39] with length 0 computed in 0.007636 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.39
+Parsimony tree [40] with length 0 computed in 0.008149 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.40
+Parsimony tree [41] with length 0 computed in 0.008316 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.41
+Parsimony tree [42] with length 0 computed in 0.008439 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.42
+Parsimony tree [43] with length 0 computed in 0.008558 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.43
+Parsimony tree [44] with length 0 computed in 0.008625 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.44
+Parsimony tree [45] with length 0 computed in 0.008816 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.45
+Parsimony tree [46] with length 0 computed in 0.007733 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.46
+Parsimony tree [47] with length 0 computed in 0.007765 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.47
+Parsimony tree [48] with length 0 computed in 0.007955 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.48
+Parsimony tree [49] with length 0 computed in 0.007130 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.49
+Parsimony tree [50] with length 0 computed in 0.007802 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.50
+Parsimony tree [51] with length 0 computed in 0.012291 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.51
+Parsimony tree [52] with length 0 computed in 0.007695 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.52
+Parsimony tree [53] with length 0 computed in 0.008477 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.53
+Parsimony tree [54] with length 0 computed in 0.007030 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.54
+Parsimony tree [55] with length 0 computed in 0.007647 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.55
+Parsimony tree [56] with length 0 computed in 0.008088 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.56
+Parsimony tree [57] with length 0 computed in 0.007618 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.57
+Parsimony tree [58] with length 0 computed in 0.008330 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.58
+Parsimony tree [59] with length 0 computed in 0.008011 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.59
+Parsimony tree [60] with length 0 computed in 0.008365 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.60
+Parsimony tree [61] with length 0 computed in 0.007912 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.61
+Parsimony tree [62] with length 0 computed in 0.008320 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.62
+Parsimony tree [63] with length 0 computed in 0.007951 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.63
+Parsimony tree [64] with length 0 computed in 0.008175 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.64
+Parsimony tree [65] with length 0 computed in 0.008213 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.65
+Parsimony tree [66] with length 0 computed in 0.007725 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.66
+Parsimony tree [67] with length 0 computed in 0.007401 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.67
+Parsimony tree [68] with length 0 computed in 0.009151 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.68
+Parsimony tree [69] with length 0 computed in 0.007213 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.69
+Parsimony tree [70] with length 0 computed in 0.011376 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.70
+Parsimony tree [71] with length 0 computed in 0.007470 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.71
+Parsimony tree [72] with length 0 computed in 0.007223 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.72
+Parsimony tree [73] with length 0 computed in 0.007720 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.73
+Parsimony tree [74] with length 0 computed in 0.007420 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.74
+Parsimony tree [75] with length 0 computed in 0.009157 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.75
+Parsimony tree [76] with length 0 computed in 0.007739 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.76
+Parsimony tree [77] with length 0 computed in 0.007901 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.77
+Parsimony tree [78] with length 0 computed in 0.008713 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.78
+Parsimony tree [79] with length 0 computed in 0.008656 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.79
+Parsimony tree [80] with length 0 computed in 0.007700 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.80
+Parsimony tree [81] with length 0 computed in 0.007577 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.81
+Parsimony tree [82] with length 0 computed in 0.007916 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.82
+Parsimony tree [83] with length 0 computed in 0.007690 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.83
+Parsimony tree [84] with length 0 computed in 0.008316 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.84
+Parsimony tree [85] with length 0 computed in 0.007336 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.85
+Parsimony tree [86] with length 0 computed in 0.007668 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.86
+Parsimony tree [87] with length 0 computed in 0.008186 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.87
+Parsimony tree [88] with length 0 computed in 0.007652 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.88
+Parsimony tree [89] with length 0 computed in 0.007480 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.89
+Parsimony tree [90] with length 0 computed in 0.008409 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.90
+Parsimony tree [91] with length 0 computed in 0.007572 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.91
+Parsimony tree [92] with length 0 computed in 0.009045 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.92
+Parsimony tree [93] with length 0 computed in 0.007803 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.93
+Parsimony tree [94] with length 0 computed in 0.007709 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.94
+Parsimony tree [95] with length 0 computed in 0.009403 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.95
+Parsimony tree [96] with length 0 computed in 0.008519 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.96
+Parsimony tree [97] with length 0 computed in 0.008530 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.97
+Parsimony tree [98] with length 0 computed in 0.007659 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.98
+Parsimony tree [99] with length 0 computed in 0.008300 seconds written to file: RAxML_parsimonyTree.core_SNPs.parsimony.99
+Most parsimonious (shortest, best) trees generated have length: 0
+Number of most parsimonious trees from SNPs_all: 100
+number nodes 17
+number new nodes 17
+FastTree Version 2.1.3 SSE3, OpenMP (16 threads)
+Alignment: core_SNPs_matrix.fasta
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Start at tree from outtree.resolved (no NNI) (no SPR)
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+Pseudocount weight for comparing sequences with little overlap: 1.000
+Total branch-length 3.035 after 0.00 sec
+1 rounds ML lengths: LogLk = -71.805 Max-change 3.0280 Time 0.00
+GTR Frequencies: 0.2632 0.1447 0.3289 0.2632
+GTR rates(ac ag at cg ct gt) 0.0892 13.4730 0.1114 0.8118 10.0914 1.0000
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.700 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+2 rounds ML lengths: LogLk = -66.117 Max-change 0.2444 Time 0.00
+Gamma(20) LogLk = -67.567 alpha = 9.988 rescaling lengths by 1.114
+Total time: 0.00 seconds Unique: 3/9 Bad splits: 0/0
+Finding nodes
+
+--------------------- WARNING ---------------------
+MSG: Node requested for reroot is already the root node!
+---------------------------------------------------
+number of nodes: 11
+Placing SNPs on nodes core_SNPs tree
+2024-01-12T19:31:11 DEBUG:Commandline options, as parsed: Namespace(SNPsFile=['core_SNPs'], Tree=['tree.core_SNPs.parsimony.tre'], TreeOutput=['tree_nodeLabel.core_SNPs.parsimony.tre'], OutputSigCounts=['Node_SNP_counts.core_SNPs.parsimony'], debug=True, info=True, quiet=False)
+2024-01-12T19:31:11 INFO:SNPs2nodes starting.
+2024-01-12T19:31:11 DEBUG:Loaded tree from tree.core_SNPs.parsimony.tre
+2024-01-12T19:31:11 DEBUG:Length(clades): 11
+2024-01-12T19:31:11 DEBUG:Length(IDsInNode): 21
+2024-01-12T19:31:11 DEBUG:Done reading nodes list
+2024-01-12T19:31:11 INFO:Loaded nodes for tree of 9 genomes from tree.core_SNPs.parsimony.tre
+2024-01-12T19:31:11 DEBUG:Starting to group nodes
+2024-01-12T19:31:11 DEBUG:Done grouping nodes
+2024-01-12T19:31:11 DEBUG:Core SNPs: 24
+2024-01-12T19:31:11 DEBUG:Groups: 4
+2024-01-12T19:31:11 DEBUG:Loci pointing to groups: 24
+2024-01-12T19:31:11 DEBUG:Roots: 11
+2024-01-12T19:31:11 DEBUG:Loci: 24
+2024-01-12T19:31:11 INFO:Loaded 24 SNPs, 11 possible roots scored.
+2024-01-12T19:31:11 DEBUG:Starting to find best root
+2024-01-12T19:31:11 DEBUG:Best root: 1
+2024-01-12T19:31:11 DEBUG:Best score: 24
+2024-01-12T19:31:11 DEBUG:Done finding best root
+2024-01-12T19:31:11 INFO:Found the best root (1) with score 24.
+2024-01-12T19:31:11 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:11 DEBUG:Number homoplastic SNPs: 0
+2024-01-12T19:31:11 DEBUG:Done writing homoplastic SNP counts
+2024-01-12T19:31:11 INFO:Finished writing COUNT_Homoplastic_SNPs
+2024-01-12T19:31:11 DEBUG:Finished sorting genomes for ordered display.
+2024-01-12T19:31:11 DEBUG:Starting to write node sig counts
+2024-01-12T19:31:11 DEBUG:Done writing node sig counts
+2024-01-12T19:31:11 INFO:Finished writing Node_SNP_counts.core_SNPs.parsimony
+2024-01-12T19:31:11 DEBUG:Starting to figure out homoplasy groups
+2024-01-12T19:31:11 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:11 DEBUG:Done writing homoplasy groups
+2024-01-12T19:31:11 INFO:Finished writing Homoplasy_groups
+2024-01-12T19:31:11 DEBUG:Starting to write cluster info
+2024-01-12T19:31:11 DEBUG:Done writing cluster info
+2024-01-12T19:31:11 INFO:Finished writing ClusterInfo
+2024-01-12T19:31:11 DEBUG:Starting to write rerooted tree
+2024-01-12T19:31:11 DEBUG:Tree: Tree(rooted=True, weight=1.0)
+    Clade(name='1')
+        Clade(branch_length=6.18082, name='C_acc_ATCC49725')
+        Clade(branch_length=0.03772, name='LM061')
+        Clade(branch_length=0.01585, name='2')
+            Clade(branch_length=0.0, name='NIH05001')
+            Clade(branch_length=0.0, name='LM095')
+            Clade(branch_length=0.0, name='LM088')
+            Clade(branch_length=0.0, name='LM087')
+            Clade(branch_length=0.0, name='LM040')
+            Clade(branch_length=0.0, name='LM031')
+            Clade(branch_length=0.0, name='LM018')
+2024-01-12T19:31:11 DEBUG:Done writing rerooted tree
+2024-01-12T19:31:11 INFO:Finished writing tree_nodeLabel.core_SNPs.parsimony.tre
+2024-01-12T19:31:11 INFO:SNPs2nodes finished.
+Finished placing SNPs on nodes core_SNPs parsimony tree
+/usr/local/kSNP4.1pkg/statusupdate 75 10 7 Generating phylogenic trees 3 2 ML
+Proccessing SNPs from SNPs_all
+Matrix already created, skipping
+Building ML tree
+FastTree Version 2.1.3 SSE3, OpenMP (16 threads)
+Alignment: SNPs_all_matrix.fasta
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+Pseudocount weight for comparing sequences with little overlap: 1.000
+Initial topology in 0.20 seconds
+Refining topology: 13 rounds ME-NNIs, 2 rounds ME-SPRs, 6 rounds ML-NNIs
+      0.20 seconds: ME NNI round 1 of 13, 1 of 7 splits
+      1.30 seconds: ME NNI round 5 of 13, 1 of 7 splits
+Total branch-length 4.527 after 2.51 sec
+      2.52 seconds: ML Lengths 1 of 7 splits
+      2.93 seconds: ML NNI round 1 of 6, 1 of 7 splits
+ML-NNI round 1: LogLk = -358642.759 NNIs 1 max delta 0.16 Time 3.57
+      3.57 seconds: Optimizing GTR model, step 1 of 12
+      4.14 seconds: Optimizing GTR model, step 2 of 12
+      4.62 seconds: Optimizing GTR model, step 3 of 12
+      5.16 seconds: Optimizing GTR model, step 4 of 12
+      5.93 seconds: Optimizing GTR model, step 5 of 12
+      6.43 seconds: Optimizing GTR model, step 6 of 12
+      6.96 seconds: Optimizing GTR model, step 7 of 12
+      7.45 seconds: Optimizing GTR model, step 8 of 12
+      7.80 seconds: Optimizing GTR model, step 9 of 12
+      8.12 seconds: Optimizing GTR model, step 10 of 12
+      8.51 seconds: Optimizing GTR model, step 11 of 12
+      8.97 seconds: Optimizing GTR model, step 12 of 12
+GTR Frequencies: 0.2799 0.2221 0.2215 0.2765
+GTR rates(ac ag at cg ct gt) 1.2075 7.5753 2.3514 0.1979 7.9027 1.0000
+      9.35 seconds: ML Lengths 1 of 7 splits
+      9.92 seconds: Site likelihoods with rate category 1 of 20
+     10.04 seconds: Site likelihoods with rate category 4 of 20
+     10.15 seconds: Site likelihoods with rate category 7 of 20
+     10.26 seconds: Site likelihoods with rate category 10 of 20
+     10.37 seconds: Site likelihoods with rate category 13 of 20
+     10.48 seconds: Site likelihoods with rate category 16 of 20
+     10.61 seconds: Site likelihoods with rate category 19 of 20
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.732 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+     10.72 seconds: ML NNI round 2 of 6, 1 of 7 splits
+ML-NNI round 2: LogLk = -328266.293 NNIs 1 max delta 0.95 Time 11.49
+     11.49 seconds: ML NNI round 3 of 6, 1 of 7 splits
+ML-NNI round 3: LogLk = -328265.543 NNIs 0 max delta 0.00 Time 12.04
+Turning off heuristics for final round of ML NNIs (converged)
+     12.03 seconds: ML NNI round 4 of 6, 1 of 7 splits
+ML-NNI round 4: LogLk = -328265.361 NNIs 0 max delta 0.00 Time 12.78 (final)
+     12.78 seconds: ML Lengths 1 of 7 splits
+Optimize all lengths: LogLk = -328265.343 Time 13.31
+     17.75 seconds: Site likelihoods with rate category 1 of 20
+     17.86 seconds: Site likelihoods with rate category 4 of 20
+     17.96 seconds: Site likelihoods with rate category 7 of 20
+     18.07 seconds: Site likelihoods with rate category 10 of 20
+     18.18 seconds: Site likelihoods with rate category 13 of 20
+     18.28 seconds: Site likelihoods with rate category 16 of 20
+     18.40 seconds: Site likelihoods with rate category 19 of 20
+     18.95 seconds: Optimizing alpha round 2
+Gamma(20) LogLk = -335506.415 alpha = 9.983 rescaling lengths by 1.007
+Total time: 19.25 seconds Unique: 9/9 Bad splits: 0/6
+Finding nodes
+
+--------------------- WARNING ---------------------
+MSG: Node requested for reroot is already the root node!
+---------------------------------------------------
+number of nodes: 16
+Placing SNPs on nodes SNPs_all tree
+2024-01-12T19:31:34 DEBUG:Commandline options, as parsed: Namespace(SNPsFile=['SNPs_all'], Tree=['tree.SNPs_all.ML.tre'], TreeOutput=['tree_nodeLabel.SNPs_all.ML.tre'], OutputSigCounts=['Node_SNP_counts.SNPs_all.ML'], debug=True, info=True, quiet=False)
+2024-01-12T19:31:34 INFO:SNPs2nodes starting.
+2024-01-12T19:31:34 DEBUG:Loaded tree from tree.SNPs_all.ML.tre
+2024-01-12T19:31:34 DEBUG:Length(clades): 16
+2024-01-12T19:31:34 DEBUG:Length(IDsInNode): 31
+2024-01-12T19:31:34 DEBUG:Done reading nodes list
+2024-01-12T19:31:34 INFO:Loaded nodes for tree of 9 genomes from tree.SNPs_all.ML.tre
+2024-01-12T19:31:34 DEBUG:Starting to group nodes
+2024-01-12T19:31:34 DEBUG:Processed 10000 SNPs, currently on AAGATTTATT.GAGCTATAAG
+2024-01-12T19:31:34 DEBUG:Processed 20000 SNPs, currently on ACGTTTCTCC.TTTATATCTA
+2024-01-12T19:31:34 DEBUG:Processed 30000 SNPs, currently on ATATTTTAGA.CCTTCACCAT
+2024-01-12T19:31:34 DEBUG:Processed 40000 SNPs, currently on CAAGGTGGGC.CCTCGAACAA
+2024-01-12T19:31:35 DEBUG:Processed 50000 SNPs, currently on CTAATTCATT.CTATTTACAG
+2024-01-12T19:31:35 DEBUG:Processed 60000 SNPs, currently on GTAATAGAAG.ATTAGACATA
+2024-01-12T19:31:35 DEBUG:Processed 70000 SNPs, currently on TTAACCATAT.TTAAAAGGAA
+2024-01-12T19:31:35 DEBUG:Done grouping nodes
+2024-01-12T19:31:35 DEBUG:Core SNPs: 24
+2024-01-12T19:31:35 DEBUG:Groups: 142
+2024-01-12T19:31:35 DEBUG:Loci pointing to groups: 71069
+2024-01-12T19:31:35 DEBUG:Roots: 16
+2024-01-12T19:31:35 DEBUG:Loci: 71069
+2024-01-12T19:31:35 INFO:Loaded 71069 SNPs, 16 possible roots scored.
+2024-01-12T19:31:35 DEBUG:Starting to find best root
+2024-01-12T19:31:35 DEBUG:Best root: 4
+2024-01-12T19:31:35 DEBUG:Best score: 63172
+2024-01-12T19:31:35 DEBUG:Done finding best root
+2024-01-12T19:31:35 INFO:Found the best root (4) with score 63172.
+2024-01-12T19:31:35 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:35 DEBUG:Number homoplastic SNPs: 7897
+2024-01-12T19:31:35 DEBUG:Done writing homoplastic SNP counts
+2024-01-12T19:31:35 INFO:Finished writing COUNT_Homoplastic_SNPs
+2024-01-12T19:31:35 DEBUG:Finished sorting genomes for ordered display.
+2024-01-12T19:31:35 DEBUG:Starting to write node sig counts
+2024-01-12T19:31:35 DEBUG:Done writing node sig counts
+2024-01-12T19:31:35 INFO:Finished writing Node_SNP_counts.SNPs_all.ML
+2024-01-12T19:31:35 DEBUG:Starting to figure out homoplasy groups
+2024-01-12T19:31:35 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:35 DEBUG:Done writing homoplasy groups
+2024-01-12T19:31:35 INFO:Finished writing Homoplasy_groups
+2024-01-12T19:31:35 DEBUG:Starting to write cluster info
+2024-01-12T19:31:35 DEBUG:Done writing cluster info
+2024-01-12T19:31:35 INFO:Finished writing ClusterInfo
+2024-01-12T19:31:35 DEBUG:Starting to write rerooted tree
+2024-01-12T19:31:35 DEBUG:Tree: Tree(rooted=True, weight=1.0)
+    Clade(confidence=1.0, name='4')
+        Clade(branch_length=1.3301, confidence=1.0, name='3')
+            Clade(branch_length=0.21872, confidence=1.0, name='2')
+                Clade(branch_length=0.02403, name='1')
+                    Clade(branch_length=0.07132, name='LM088')
+                    Clade(branch_length=0.03825, name='LM018')
+                Clade(branch_length=0.03969, name='NIH05001')
+            Clade(branch_length=0.14222, confidence=1.0, name='6')
+                Clade(branch_length=0.13642, confidence=1.0, name='7')
+                    Clade(branch_length=0.00014, name='LM095')
+                    Clade(branch_length=0.00022, name='LM087')
+                Clade(branch_length=0.24277, name='LM040')
+        Clade(branch_length=0.02207, confidence=0.755, name='5')
+            Clade(branch_length=0.19727, name='LM031')
+            Clade(branch_length=4.97062, name='C_acc_ATCC49725')
+        Clade(branch_length=0.1895, name='LM061')
+2024-01-12T19:31:35 DEBUG:Done writing rerooted tree
+2024-01-12T19:31:35 INFO:Finished writing tree_nodeLabel.SNPs_all.ML.tre
+2024-01-12T19:31:35 INFO:SNPs2nodes finished.
+Finished placing SNPs on nodes SNPs_all ML tree
+Identifying core SNPs for use in creating trees
+Proccessing SNPs from core_SNPs
+Matrix already created, skipping
+Building ML tree
+FastTree Version 2.1.3 SSE3, OpenMP (16 threads)
+Alignment: core_SNPs_matrix.fasta
+Nucleotide distances: Jukes-Cantor Joins: balanced Support: SH-like 1000
+Search: Normal +NNI +SPR (2 rounds range 10) +ML-NNI opt-each=1
+TopHits: 1.00*sqrtN close=default refresh=0.80
+ML Model: Generalized Time-Reversible, CAT approximation with 20 rate categories
+Pseudocount weight for comparing sequences with little overlap: 1.000
+Initial topology in 0.01 seconds
+Refining topology: 6 rounds ME-NNIs, 2 rounds ME-SPRs, 3 rounds ML-NNIs
+Total branch-length 3.035 after 0.01 sec
+ML-NNI round 1: LogLk = -71.805 NNIs 0 max delta 0.00 Time 0.01
+GTR Frequencies: 0.2632 0.1447 0.3289 0.2632
+GTR rates(ac ag at cg ct gt) 0.0892 13.4588 0.1085 0.8170 10.1500 1.0000
+Switched to using 20 rate categories (CAT approximation)
+Rate categories were divided by 0.700 so that average rate = 1.0
+CAT-based log-likelihoods may not be comparable across runs
+ML-NNI round 2: LogLk = -66.121 NNIs 0 max delta 0.00 Time 0.01
+Turning off heuristics for final round of ML NNIs (converged)
+ML-NNI round 3: LogLk = -66.121 NNIs 0 max delta 0.00 Time 0.01 (final)
+Optimize all lengths: LogLk = -66.116 Time 0.01
+Gamma(20) LogLk = -67.565 alpha = 9.987 rescaling lengths by 1.114
+Total time: 0.01 seconds Unique: 3/9 Bad splits: 0/0
+Finding nodes
+
+--------------------- WARNING ---------------------
+MSG: Node requested for reroot is already the root node!
+---------------------------------------------------
+number of nodes: 11
+Placing SNPs on nodes core_SNPs tree
+2024-01-12T19:31:38 DEBUG:Commandline options, as parsed: Namespace(SNPsFile=['core_SNPs'], Tree=['tree.core_SNPs.ML.tre'], TreeOutput=['tree_nodeLabel.core_SNPs.ML.tre'], OutputSigCounts=['Node_SNP_counts.core_SNPs.ML'], debug=True, info=True, quiet=False)
+2024-01-12T19:31:38 INFO:SNPs2nodes starting.
+2024-01-12T19:31:38 DEBUG:Loaded tree from tree.core_SNPs.ML.tre
+2024-01-12T19:31:38 DEBUG:Length(clades): 11
+2024-01-12T19:31:38 DEBUG:Length(IDsInNode): 21
+2024-01-12T19:31:38 DEBUG:Done reading nodes list
+2024-01-12T19:31:38 INFO:Loaded nodes for tree of 9 genomes from tree.core_SNPs.ML.tre
+2024-01-12T19:31:38 DEBUG:Starting to group nodes
+2024-01-12T19:31:38 DEBUG:Done grouping nodes
+2024-01-12T19:31:38 DEBUG:Core SNPs: 24
+2024-01-12T19:31:38 DEBUG:Groups: 4
+2024-01-12T19:31:38 DEBUG:Loci pointing to groups: 24
+2024-01-12T19:31:38 DEBUG:Roots: 11
+2024-01-12T19:31:38 DEBUG:Loci: 24
+2024-01-12T19:31:38 INFO:Loaded 24 SNPs, 11 possible roots scored.
+2024-01-12T19:31:38 DEBUG:Starting to find best root
+2024-01-12T19:31:38 DEBUG:Best root: 1
+2024-01-12T19:31:38 DEBUG:Best score: 24
+2024-01-12T19:31:38 DEBUG:Done finding best root
+2024-01-12T19:31:38 INFO:Found the best root (1) with score 24.
+2024-01-12T19:31:38 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:38 DEBUG:Number homoplastic SNPs: 0
+2024-01-12T19:31:38 DEBUG:Done writing homoplastic SNP counts
+2024-01-12T19:31:38 INFO:Finished writing COUNT_Homoplastic_SNPs
+2024-01-12T19:31:38 DEBUG:Finished sorting genomes for ordered display.
+2024-01-12T19:31:38 DEBUG:Starting to write node sig counts
+2024-01-12T19:31:38 DEBUG:Done writing node sig counts
+2024-01-12T19:31:38 INFO:Finished writing Node_SNP_counts.core_SNPs.ML
+2024-01-12T19:31:38 DEBUG:Starting to figure out homoplasy groups
+2024-01-12T19:31:38 DEBUG:Starting to write homoplastic SNP counts
+2024-01-12T19:31:38 DEBUG:Done writing homoplasy groups
+2024-01-12T19:31:38 INFO:Finished writing Homoplasy_groups
+2024-01-12T19:31:38 DEBUG:Starting to write cluster info
+2024-01-12T19:31:38 DEBUG:Done writing cluster info
+2024-01-12T19:31:38 INFO:Finished writing ClusterInfo
+2024-01-12T19:31:38 DEBUG:Starting to write rerooted tree
+2024-01-12T19:31:38 DEBUG:Tree: Tree(rooted=True, weight=1.0)
+    Clade(name='1')
+        Clade(branch_length=0.03413, name='LM061')
+        Clade(branch_length=0.01938, name='2')
+            Clade(branch_length=0.0, name='NIH05001')
+            Clade(branch_length=0.0, name='LM095')
+            Clade(branch_length=0.0, name='LM088')
+            Clade(branch_length=0.0, name='LM087')
+            Clade(branch_length=0.0, name='LM040')
+            Clade(branch_length=0.0, name='LM031')
+            Clade(branch_length=0.0, name='LM018')
+        Clade(branch_length=6.17859, name='C_acc_ATCC49725')
+2024-01-12T19:31:38 DEBUG:Done writing rerooted tree
+2024-01-12T19:31:38 INFO:Finished writing tree_nodeLabel.core_SNPs.ML.tre
+2024-01-12T19:31:38 INFO:SNPs2nodes finished.
+Finished placing SNPs on nodes core_SNPs ML tree
+/usr/local/kSNP4.1pkg/statusupdate 102 10 7 Generating phylogenic trees 3 3 Generating unresolved clusters
+/usr/local/kSNP4.1pkg/statusupdate 102 10 7 Generating phylogenic trees 3 3 Done
+/usr/local/kSNP4.1pkg/statusupdate 103 10 8 Getting annotation data from NCBI 0 0 Starting
+Annotating SNPs.
+Fri Jan 12 19:31:40 UTC 2024
+/usr/local/kSNP4.1pkg/statusupdate 103 10 10 Cleanup 1 0 Starting
+Finished running kSNP
+Fri Jan 12 19:31:40 UTC 2024
+Elapsed time for kSNP in hours: 0.0286111111111111
+mv: cannot stat 'Dir.*': No such file or directory
+mv: cannot stat '*.mers': No such file or directory
+mv: cannot stat 'Jelly.*': No such file or directory
+mv: cannot stat 'SNP_loci.*.mers.fasta': No such file or directory
+mv: cannot stat 'mer_list': No such file or directory
+mv: cannot stat '*.mers.SNPs_all': No such file or directory
+mv: cannot stat 'cmds*': No such file or directory
+mv: cannot stat 'tree_list1': No such file or directory
+mv: cannot stat 'tree_list2': No such file or directory
+mv: cannot stat 'SNP_annotations': No such file or directory
+mv: cannot stat 'nodes.*': No such file or directory
+mv: cannot stat 'tree_tipAlleleCounts.*.NodeLabel.tre': No such file or directory
+mv: cannot stat 'tree_nodeLabel.*': No such file or directory
+mv: cannot stat 'genbank_from_NCBI.gbk.*': No such file or directory
+/usr/local/kSNP4.1pkg/statusupdate 108 10 10 Cleanup 1 1 Done

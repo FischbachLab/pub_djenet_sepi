@@ -1,0 +1,20 @@
+Group: Group.12	NumberTargets: 8	NumberSNPs: 23
+LM018
+LM031
+LM040
+LM061
+LM087
+LM088
+LM095
+NIH05001
+
+Group: Group.13	NumberTargets: 8	NumberSNPs: 1
+C_acc_ATCC49725
+LM018
+LM031
+LM040
+LM087
+LM088
+LM095
+NIH05001
+

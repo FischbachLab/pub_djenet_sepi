@@ -1,0 +1,1 @@
+This dockerfile was modified from the State Public Health Bioinformatics Workshop's [docker-build repo](https://github.com/StaPH-B/docker-builds/tree/master/ksnp4/4.0). Specifically, the dockerfile was updated to use the latest version of kSNP v4.1. Additional modifications were made to make it more consistent with the other dockerfiles in the lab.
