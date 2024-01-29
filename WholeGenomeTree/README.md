@@ -1,5 +1,7 @@
 # Generating the Whole Genome Trees
 
+(kSNP4.1)[https://pubmed.ncbi.nlm.nih.gov/37948764/] is a k-mer based SNP calling tool that can be used to generate whole genome trees. This tool is used to generate the whole genome trees for the S. epidermidis strains in this study.
+
 ## Download the C.acc ATCC49725 genome from NCBI
 
 ```bash
@@ -20,7 +22,7 @@ docker build -t ksnp4:20240112010805 .
 
 ```bash
 cd /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi
-docker container run -it --rm -v $PWD:$PWD -w $PWD ksnp4:20240112010805 bash
+docker container run -it --rm -v $PWD:$PWD -w $PWD 458432034220.dkr.ecr.us-west-2.amazonaws.com/ksnp4:20240112010805 bash
 MakeKSNP4infile -indir genomes/main_genome/ -outfile main_genome.list
 kSNP4 -in main_genome.list -k 21 -ML -outdir kSNP_run
 ```
@@ -29,7 +31,7 @@ kSNP4 -in main_genome.list -k 21 -ML -outdir kSNP_run
 
 ```bash
 cd /mnt/efs/scratch/sunit/Github/FischbachLab/s_epi
-docker container run -it --rm -v $PWD:$PWD -w $PWD ksnp4:20240112010805 bash
+docker container run -it --rm -v $PWD:$PWD -w $PWD 458432034220.dkr.ecr.us-west-2.amazonaws.com/ksnp4:20240112010805 bash
 MakeKSNP4infile -indir genomes/genome_w_plasmid/ -outfile genome_w_plasmid.list
 kSNP4 -in genome_w_plasmid.list -k 21 -ML -outdir kSNP_run
 ```
