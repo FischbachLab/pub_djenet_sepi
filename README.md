@@ -1,6 +1,6 @@
 # Discovery and engineering of the antibody response against a prominent skin commensal
 
-Nature, accepted Nov 2025
+Nature, accepted Nov 2024
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14183493.svg)](https://doi.org/10.5281/zenodo.14183493)
 
