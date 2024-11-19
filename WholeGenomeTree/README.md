@@ -44,12 +44,13 @@ MakeKSNP4infile -indir genomes/genome_w_plasmid/ -outfile genome_w_plasmid.list
 kSNP4 -in genome_w_plasmid.list -k 21 -ML -outdir genome_w_plasmid_kSNP_run
 ```
 
+Once you're done, use `cmd + d` (or `ctrl + d`) to exit the container.
 
 ### Actual commands used (for Reproducibility)
 
 ```bash
 cd kSNP4.1
-make # This builds the docker image and add to a private repository
+make # This builds the docker image and adds to a private Amazon ECR repository
 
 cd ..
 docker container run -it --rm -v $PWD:$PWD -w $PWD 458432034220.dkr.ecr.us-west-2.amazonaws.com/ksnp4:20240112010805 bash
