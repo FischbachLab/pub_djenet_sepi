@@ -59,5 +59,3 @@ kSNP4 -in genome_w_plasmid.list -k 21 -ML -outdir genome_w_plasmid_kSNP_run
 ```
 
 runtime: ~ 5 minutes
-
-## Questions/Feedback
